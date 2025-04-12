@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-    <div class="relative flex h-[calc(100dvh-15rem)] min-h-max max-w-[900dvw] w-full flex-col items-center overflow-hidden">
+    <div class="relative flex h-[calc(100vh-15rem)] min-h-max max-w-[100dvw] w-full flex-col items-center overflow-hidden">
 
       <div class="absolute inset-0 z-0">
         <div class="absolute top-20 -left-32 w-96 h-96 bg-purple-500/10 rounded-full blur-[110px]"></div>
