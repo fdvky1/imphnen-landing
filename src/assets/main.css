@@ -1,35 +1,107 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Import custom font */
+@font-face {
+  font-family: 'FOT Yuruka Std';
+  src: url('/static/fonts/fot-yuruka-std.ttf') format('truetype');
   font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Improves font loading performance */
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+:root {
+    --bg-primary: #f0f4f8;
+    --text-primary: #152a4e;
+    --text-secondary: #2c4f77;
+    --scrollbar-track: rgba(0, 0, 0, 0.05);
+    --scrollbar-thumb: rgba(21, 42, 78, 0.2);
+    --scrollbar-thumb-hover: rgba(21, 42, 78, 0.4);
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+[data-theme=dark] {
+    --bg-primary: #0a0f24;
+    --text-primary: #ffffff;
+    --text-secondary: #d1e5f4;
+    --scrollbar-track: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb: rgba(209, 229, 244, 0.2);
+    --scrollbar-thumb-hover: rgba(209, 229, 244, 0.4);
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+@layer utilities {
+.bg-grid {
+        position: relative;
+        background-color: var(--bg-primary);
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.05) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+    
+    .bg-grid::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 150px;
+        background: linear-gradient(to top, transparent, var(--bg-primary));
+        pointer-events: none;
+        z-index: 1;
+    }
+    
+    .bg-grid::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 150px;
+        background: linear-gradient(to bottom, transparent, var(--bg-primary));
+        pointer-events: none;
+        z-index: 1;
+    }
+    
+    [data-theme=dark] .bg-grid {
+        background-image: linear-gradient(0deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    }
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+@theme {
+    --font-worksans: "Work Sans", sans-serif;
+    --font-yuruka: "FOT Yuruka Std", sans-serif;
+}
+
+body {
+    @apply font-worksans;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 10px;
+    transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+}
+
+/* Firefox scrollbar styling */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }

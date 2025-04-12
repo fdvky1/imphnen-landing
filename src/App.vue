@@ -1,47 +1,29 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script setup>
+import Navbar from './components/Navbar.vue';
+import Hero from './components/Hero.vue';
+import About from './components/About.vue';
+import Project from './components/Project.vue';
+import Community from './components/Community.vue';
+import Merchandise from './components/Merchandise.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <Navbar/>
+  <Hero/>
+  <About/>
+  <Project/>
+  <Community/>
+  <Merchandise/>
+  <Footer/>
+  
+  <!-- Copyright section -->
+  <div class="py-6 text-center text-sm text-current/70 border-t border-black/10 dark:border-white/10">
+    <div class="container mx-auto px-6">
+      © 2025 IMPHNEN. All rights reserved.
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
