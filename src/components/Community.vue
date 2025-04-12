@@ -66,8 +66,8 @@
       </div>
       
       <!-- Community profile images -->
-      <div class="absolute -mt-[18rem] md:-mt-[14.5rem] w-[1024px] select-none">
-        <div class="flex h-full origin-bottom-right select-none flex-wrap gap-4">
+      <div class="absolute -mt-[18rem] md:-mt-[14.5rem] w-[1024px]">
+        <div class="flex h-full origin-bottom-right flex-wrap gap-4">
           <div v-for="(profile, i) in profilePositions" :key="i"
                class="absolute left-0 top-0 touch-none select-none transition-opacity"
                :style="{
