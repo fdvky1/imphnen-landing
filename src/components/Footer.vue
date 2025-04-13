@@ -16,7 +16,7 @@
         
         <!-- Get in touch and Social Media -->
         <div>
-          <h3 class="text-lg text-current/70 mt-1 mb-3"></h3>
+          <h3 class="text-lg text-current/70 mt-1 mb-3">Jadi Bagian dari Komunitas</h3>
           <div class="flex gap-6">
             <a href="https://www.facebook.com/groups/programmerhandal/" target="_blank" rel="noopener" class="hover:text-blue-500 transition-colors duration-300">
               <i class="ri-facebook-fill text-xl"></i>
