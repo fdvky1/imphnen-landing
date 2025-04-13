@@ -30,7 +30,7 @@
         <!-- Text content -->
         <div class="text-center w-full">
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-in fade-in slide-in-from-bottom-10 duration-1000">
-            Ingin Menjadi <br class="hidden md:block lg:hidden"><span class="underline">Programer Handal</span> Namun <br class="hidden xl:block"><span class="underline">Enggan Ngoding</span> 
+            Ingin Menjadi <br class="hidden md:block lg:hidden"><span class="underline">Programmer Handal</span> Namun <br class="hidden xl:block"><span class="underline">Enggan Ngoding</span> 
           </h1>
           <p class="text-xl md:text-2xl text-current/80 mb-6 animate-in fade-in slide-in-from-bottom-5 duration-1000 delay-300">
             Ngoding? Malas, Besok aja.
