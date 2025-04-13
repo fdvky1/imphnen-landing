@@ -26,7 +26,7 @@
              class="bg-black/5 dark:bg-white/5 backdrop-blur-sm rounded-xl border border-black/10 dark:border-white/10 overflow-hidden animate-in fade-in slide-in-from-bottom-5 duration-700 transition-all hover:shadow-lg hover:shadow-purple-500/10 group"
              :style="{ animationDelay: `${index * 100}ms` }">
           <div class="relative">
-            <img :src="item.image" :alt="item.title" class="w-full h-60 object-cover transition-opacity duration-300" />
+            <img :src="item.image" :alt="item.title" class="w-full h-60 object-cover transition-opacity duration-300" loading="lazy" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
               <a :href="item.shopeeLink || '#'" target="_blank" rel="noopener noreferrer"
                  class="rounded-full bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 flex items-center gap-2 transition-colors duration-300">

@@ -25,7 +25,7 @@
              class="bg-black/5 dark:bg-white/5 backdrop-blur-sm rounded-xl border border-black/10 dark:border-white/10 overflow-hidden animate-in fade-in slide-in-from-bottom-5 duration-700"
              :style="{ animationDelay: `${index * 100}ms` }">
           <div class="relative">
-            <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" />
+            <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" loading="lazy" />
             <div class="absolute top-3 right-3">
               <span class="bg-black/60 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">
                 {{ project.status }}
