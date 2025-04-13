@@ -69,17 +69,17 @@
       <div class="absolute -mt-[18rem] md:-mt-[14.5rem] w-[1024px]">
         <div class="flex h-full origin-bottom-right flex-wrap gap-4">
           <div v-for="(profile, i) in profilePositions" :key="i"
-               class="absolute left-0 top-0 touch-none select-none transition-opacity"
+               class="absolute left-0 top-0 md:touch-none select-none transition-opacity"
                :style="{
                  width: `${profile.size}px`, 
                  height: `${profile.size}px`, 
                  '--delay': `${profile.delay}ms`,
                  translate: `${profile.x}px ${profile.y}px`
                }">
-            <button class="group absolute inset-0 h-full w-full touch-none select-none opacity-0"
+            <button class="group absolute inset-0 h-full w-full md:touch-none select-none opacity-0"
                     :class="{'_animate': i < 8}">
               <div>
-                <img class="group aspect-square h-full w-full touch-none select-none rounded-[50%] object-cover outline outline-4"
+                <img class="group aspect-square h-full w-full md:touch-none select-none rounded-[50%] object-cover outline outline-4"
                      :class="profile.outlineColor"
                      :src="profile.image"
                      alt="community profile picture"
