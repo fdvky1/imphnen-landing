@@ -26,21 +26,20 @@
     
     <!-- Hero content -->
     <div class="container mx-auto px-6 relative z-20">
-      <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+      <div class="flex flex-col lg:flex-row w-full items-center gap-8 lg:gap-12">
         <!-- Text content -->
-        <div class="text-center">
+        <div class="text-center w-full">
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-in fade-in slide-in-from-bottom-10 duration-1000">
-            Ingin Menjadi <span class="underline">Programer</span> Handal  Namun <span class="underline">Enggan Ngoding</span> 
+            Ingin Menjadi <br class="hidden md:block lg:hidden"><span class="underline">Programer Handal</span> Namun <br class="hidden xl:block"><span class="underline">Enggan Ngoding</span> 
           </h1>
           <p class="text-xl md:text-2xl text-current/80 mb-6 animate-in fade-in slide-in-from-bottom-5 duration-1000 delay-300">
-        Ngoding? Malas, Besok aja.
-      </p>
+            Ngoding? Malas, Besok aja.
+          </p>
 
-      <div class="inline-flex gap-4 mt-4 animate-in fade-in slide-in-from-bottom-5 duration-1000 delay-500">
-        
-        <a href="#community" class="px-6 py-3 bg-indigo-500/70 dark:bg-indigo-500/90 text-white rounded-xl shadow-md hover:bg-indigo-500/90 dark:hover:bg-indigo-500/70 transition">Gabung Komunitas</a>
-        <a href="#about" class="px-6 py-3 border border-current/20 text-current rounded-xl hover:bg-black/10 dark:hover:bg-white/10 transition">Pelajari Lebih Lanjut</a>
-      </div>
+          <div class="flex flex-col sm:flex-row justify-center gap-4 mt-4 animate-in fade-in slide-in-from-bottom-5 duration-1000 delay-500 text-xs sm:text-base">
+            <a href="#community" class="px-6 py-3 bg-indigo-500/70 dark:bg-indigo-500/90 text-white rounded-xl shadow-md hover:bg-indigo-500/90 dark:hover:bg-indigo-500/70 transition">Gabung Komunitas</a>
+            <a href="#about" class="px-6 py-3 border border-current/20 text-current rounded-xl hover:bg-black/10 dark:hover:bg-white/10 transition">Pelajari Lebih Lanjut</a>
+          </div>
         </div>
         
         <!-- <div class="lg:w-1/2 animate-in fade-in slide-in-from-right-10 duration-1000 delay-200">

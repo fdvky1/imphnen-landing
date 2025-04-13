@@ -6,7 +6,7 @@
       </a>
       
       <nav class="flex items-center">
-        <ul class="flex flex-col md:flex-row items-center gap-1 md:rounded-xl backdrop-blur-md md:bg-black/5 md:dark:bg-white/5 md:px-4 md:py-2.5 font-medium absolute md:static transition-all duration-300 transform-gpu
+        <ul class="flex flex-col md:flex-row items-center gap-1 md:rounded-xl backdrop-blur-md md:bg-black/5 md:dark:bg-white/5 md:px-4 md:py-1.5 font-medium absolute md:static transition-all duration-300 transform-gpu
                    md:mt-0 overflow-y-auto
                    md:opacity-100 md:pointer-events-auto"
             :class="mobileMenuOpen ? 'inset-0 top-0 h-screen bg-white/80 dark:bg-black/80 px-6 py-10 translate-y-0 opacity-100 z-40' : 'md:translate-y-0 opacity-0 pointer-events-none -translate-y-10'">
@@ -22,7 +22,7 @@
           </li>
         </ul>
         
-        <div class="hidden md:block ml-4">
+        <div class="hidden md:block ml-2">
           <ThemeToggle />
         </div>
         <button class="ml-4 h-10 w-10 rounded-lg bg-black/5 dark:bg-white/5 flex flex-col justify-center items-center md:hidden z-50" @click="toggleMobileMenu">
